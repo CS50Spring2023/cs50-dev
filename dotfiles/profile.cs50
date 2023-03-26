@@ -1,0 +1,32 @@
+# This file includes environment variables required and recommended for CS50.
+# You should 'source' this file from your ~/.bashrc.
+# For more info type `man bash'.
+# --------------------------------------------------------------------
+
+# Use 'less' as a paginator (e.g., for man pages, git diffs).
+export PAGER="less -R"
+
+# Make less more verbose than usual.
+export LESS='-s -w -M'
+
+# What editor should we use? uncomment the one you prefer
+# export EDITOR='/usr/bin/emacs -nw -q'
+# export EDITOR=/usr/bin/vim
+
+# some tools look for this variable to pick an editor
+export VISUAL="$EDITOR"
+
+# set the locale to "C", so scripts behave consistently
+export LC_ALL=C
+
+# --------------------------------------------------------------------
+# resource limits recommended for cs50
+
+# allow core dumps: Thayer granted our request to enable core dumps
+ulimit -c unlimited
+
+# the following can protect against infinite loops with fork(), malloc(), etc.
+ulimit -t 900     # maximum CPU time in seconds
+ulimit -v 1000000 # maximum virtual memory in KBytes
+ulimit -u 1000    # maximum number of processes
+

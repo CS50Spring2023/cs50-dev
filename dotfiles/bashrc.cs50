@@ -1,0 +1,23 @@
+# --------------------------------------------------------------------
+# This file includes aliases required and recommended for CS50.
+# You should 'source' this file from your ~/.bashrc.
+# For more info type `man bash'.
+# --------------------------------------------------------------------
+
+# aliases used for cs50 development
+alias mygcc='gcc -Wall -pedantic -std=c11 -ggdb'
+alias myvalgrind='valgrind --leak-check=full --show-leak-kinds=all'
+
+# aliases for safety
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# aliases for convenience
+alias ls='ls -F --color=auto'
+alias ll='ls -D --color=auto -lt'
+alias mkdir='mkdir -p'
+alias which='type -all'
+alias allme='pgrep -l -u $UID'
+
+# --------------------------------------------------------------------
