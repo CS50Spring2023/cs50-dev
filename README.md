@@ -56,7 +56,7 @@ You cannot connect to Thayer's Linux servers unless you are connected to the Dar
 	This program installs (or overwrites) the files  `.bashrc` and `.profile` in your home directory.
 	**Important:** if you have used Thayer's Linux systems before, and have customized your copy of these configuration files, type `n` when the script asks to overwrite them; if you type `y` you will lose your customizations and begin with fresh Thayer-supplied default configuration.
 
-5. Set up your GitHub account and provide GitHub a 'key' so your account on `plank` can access GitHub; follow these [instructions](https://www.cs.dartmouth.edu/~cs50/Logistics/github.html), and then return here.
+5. Set up your GitHub account and provide GitHub a 'key' so your account on `plank` can access GitHub; follow these [instructions](https://github.com/CS50Spring2023/home/blob/main/logistics/github.md), and then return here.
 
 6. Clone this repository into your home directory:
 	<!-- @CHANGEME - insert term-specific repo link -->
