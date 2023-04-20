@@ -25,8 +25,9 @@ export LC_ALL=C
 # allow core dumps: Thayer granted our request to enable core dumps
 ulimit -c unlimited
 
-# the following can protect against infinite loops with fork(), malloc(), etc.
-ulimit -t 900     # maximum CPU time in seconds
-ulimit -v 1000000 # maximum virtual memory in KBytes
-ulimit -u 1000    # maximum number of processes
-
+# Due to VSCode's popularity and its extension's heavy use of resources
+#   we no longer recommend changing any other `ulimit` defaults even though
+#   the following can protect against infinite loops with fork(), malloc(), etc.
+#ulimit -t 900     # maximum CPU time in seconds
+#ulimit -v 1000000 # maximum virtual memory in KBytes
+#ulimit -u 1000    # maximum number of processes
